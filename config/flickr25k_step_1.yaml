@@ -1,0 +1,31 @@
+MODEL:
+    G_ARCHITECTURE: "GOOD"
+    D_ARCHITECTURE: "GOOD"
+    G_PRETRAINED_MODEL_PATH: ''
+    D_PRETRAINED_MODEL_PATH: ''
+
+DATA:
+    USE_DATASET: "flickr25k"  # "cifar10", "nuswide81", "coco"
+    LABEL_DIM: 24
+    DB_SIZE: 23000
+    TEST_SIZE: 5000
+    WIDTH_HEIGHT: 64
+    MAP_R: 23000  
+    LIST_ROOT: "./data/flickr25k"
+    DATA_ROOT: "./data/flickr25k"
+    OUTPUT_DIR: "./output/flickr25k_64_step_1_1"
+
+TRAIN:
+    BATCH_SIZE: 64
+    ITERS: 10000
+    CROSS_ENTROPY_ALPHA: 10
+    LR: 1e-4  # Initial learning rate
+    G_LR: 1e-4  # 1e-4
+    DECAY: True  # Whether to decay LR over learning
+    N_CRITIC: 5 # Critic steps per generator steps
+    EVAL_FREQUENCY: 1000  # How frequently to evaluate and save model
+    CHECKPOINT_FREQUENCY: 1000
+    ACGAN_SCALE: 1.0
+    ACGAN_SCALE_G: 10.0
+    WGAN_SCALE: 1.0  
+    WGAN_SCALE_G: 1.0

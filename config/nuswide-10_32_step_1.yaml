@@ -1,0 +1,31 @@
+MODEL:
+    G_ARCHITECTURE: "NORM"
+    D_ARCHITECTURE: "NORM"
+    G_PRETRAINED_MODEL_PATH: ''
+    D_PRETRAINED_MODEL_PATH: ''
+
+DATA:
+    USE_DATASET: "nuswide-10"  # "cifar10", "nuswide81", "coco"
+    LABEL_DIM: 10
+    DB_SIZE: 181577 
+    TEST_SIZE: 10500 
+    WIDTH_HEIGHT: 32 
+    MAP_R: 181577
+    LIST_ROOT: "./data/nuswide-10"
+    DATA_ROOT: "./data/nuswide-10"
+    OUTPUT_DIR: "./output/nuswide-10_32_step_1_5"
+
+TRAIN:
+    BATCH_SIZE: 64
+    ITERS: 50000
+    CROSS_ENTROPY_ALPHA: 5
+    LR: 1e-4  # Initial learning rate
+    G_LR: 1e-4  # 1e-4
+    DECAY: True  # Whether to decay LR over learning
+    N_CRITIC: 5 # Critic steps per generator steps
+    EVAL_FREQUENCY: 5000  # How frequently to evaluate and save model
+    CHECKPOINT_FREQUENCY: 1000
+    ACGAN_SCALE: 1.0
+    ACGAN_SCALE_G: 0.3
+    WGAN_SCALE: 1.0  
+    WGAN_SCALE_G: 1.0
