@@ -1,6 +1,6 @@
 # HashGAN：基于PC-WGAN的深度哈希
 
-这是CVPR 2018论文 ["HashGAN: Deep Learning to Hash with Pair Conditional Wasserstein GAN"](http://openaccess.thecvf.com/content_cvpr_2018/papers/Cao_HashGAN_Deep_Learning_CVPR_2018_paper.pdf) 的复现仓库。论文原仓库指路：https://github.com/thuml/HashGAN。
+这是CVPR 2018论文 ["HashGAN: Deep Learning to Hash with Pair Conditional Wasserstein GAN"](http://openaccess.thecvf.com/content_cvpr_2018/papers/Cao_HashGAN_Deep_Learning_CVPR_2018_paper.pdf) 的复现仓库。论文原仓库指路：[thuml/HashGAN](https://github.com/thuml/HashGAN)。
 
 ## 环境配置
 
